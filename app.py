@@ -18,10 +18,7 @@ def show_form():
     request with form values to the flask show_story 
     """
 
-    prompts = silly_story.prompts
-    # replace prompts inside of return statement
-
-    return render_template("questions.html", prompts=prompts)
+    return render_template("questions.html", prompts=silly_story.prompts)
 
 
 @app.get('/story')
